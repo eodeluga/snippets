@@ -31,5 +31,5 @@ sudo curl -L \
   -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
-# Add logged in user to docker group
+# Add logged in user to docker group to allow running of docker commands without elevation
 sudo usermod -a -G docker $(echo $USERNAME)
