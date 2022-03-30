@@ -45,6 +45,7 @@ ExecStart=/usr/local/bin/mount-cgroup.sh\n
 [Install]
 WantedBy=multi-user.target'" >> /etc/systemd/system/mount-cgroup.service
 
+# Create the script the service executes
 sudo su -c "echo -e '#!/bin/bash\n
 # Mounts cgroup for Docker
 sudo mkdir /sys/fs/cgroup/systemd
