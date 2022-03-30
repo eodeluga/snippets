@@ -35,5 +35,25 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo usermod -a -G docker $(echo $USERNAME)
 
 # Need to add cgroup support for some containers
+#
+# Create a systemd service that mounts cgroup at boot
+sudo su -c "echo -e '[Unit]
+Description=Docker mount cgroup
+After=network.target\n
+[Service]
+ExecStart=/usr/local/bin/mount-cgroup.sh\n
+[Install]
+WantedBy=multi-user.target'" >> /etc/systemd/system/mount-cgroup.service
+
+sudo su -c "echo -e '#!/bin/bash\n
+# Mounts cgroup for Docker
 sudo mkdir /sys/fs/cgroup/systemd
-sudo su -c "echo -e '#cgroup filesystem for docker\n/sys/fs/cgroup/systemd cgroup cgroup none,name=systemd' >> /etc/fstab"
+sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd'" >> /usr/local/bin/mount-cgroup.sh
+
+# Set permissions for newly created files
+sudo chmod 744 /usr/local/bin/mount-cgroup.sh
+sudo chmod 664 /etc/systemd/system/mount-cgroup.service
+
+# Enable the service
+sudo systemctl daemon-reload
+sudo systemctl enable mount-cgroup.service
