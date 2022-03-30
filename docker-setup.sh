@@ -33,3 +33,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 # Add logged in user to docker group to allow running of docker commands without elevation
 sudo usermod -a -G docker $(echo $USERNAME)
+
+# Need to add cgroup support for some containers
+sudo mkdir /sys/fs/cgroup/systemd
+sudo su -c "echo -e '#cgroup filesystem for docker\n/sys/fs/cgroup/systemd cgroup cgroup none,name=systemd' >> /etc/fstab"
