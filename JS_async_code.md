@@ -1,5 +1,13 @@
 # JavaScript Notes On Asynchronous Code
 * If a function awaits another function, it must be declared as an async function
+```
+async function awaitsAfunction() {
+  let val = await aFunction();
+  return val;
+}
+
+// Anonymous functions style
+const awaitsAFunction = async => aFunction(); 
 
 * a JS promise follows this syntax
 ```
