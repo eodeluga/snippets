@@ -35,7 +35,7 @@ const query = (con, sql) => new Promise((resolve, reject) => {
 });
 ```
 
-* If a function returns a Promise and you don't want to use the older .then syntax you can use the await syntactic sugar
+* If a function returns a Promise and you don't want to use the older <code>.then</code> syntax you can use the await syntactic sugar
 ```
 let value = await returnsAPromise();
 ```
