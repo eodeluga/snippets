@@ -7,7 +7,8 @@ async function awaitsAfunction() {
 }
 
 // Anonymous functions style
-const awaitsAFunction = async => aFunction(); 
+const awaitsAFunction = async => aFunction();
+```
 
 * a JS promise follows this syntax
 ```
