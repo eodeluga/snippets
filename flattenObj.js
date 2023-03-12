@@ -1,17 +1,18 @@
-const obj = { a: { b: { c: 1 } }, d: 2 };
-
-const flattenObject = (obj, prefix = '') =>
-  Object.keys(obj).reduce((acc, k) => {
-    const pre = prefix.length ? `${prefix}.` : '';
+const flattenObject = (obj: Dictionary, prefix: string = ''): Dictionary =>
+  Object.keys(obj).reduce((acc: Dictionary, k: string) => {
+    const pre: string = prefix.length ? `${prefix}.` : '';
     if (
-      typeof obj[k] === 'object' &&
-      obj[k] !== null &&
-      Object.keys(obj[k]).length > 0
-    )
-      Object.assign(acc, flattenObject(obj[k], pre + k));
-    else acc[pre + k] = obj[k];
+        typeof obj[k] === 'object' &&
+        obj[k] !== null &&
+        Object.keys(obj[k]).length > 0
+    ) {
+        Object.assign(acc, flattenObject(obj[k] as Dictionary, pre + k));
+    } else {
+        acc[pre + k] = obj[k];
+    }
     return acc;
   }, {});
 
-console.log(flattenObject(obj));
+const nestedObj = { a: { b: { c: 1 } }, d: 2 };
+console.log(flattenObject(nestedObj));
 // { 'a.b.c': 1, d: 2 }
