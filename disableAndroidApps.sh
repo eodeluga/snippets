@@ -14,6 +14,7 @@ pm disable-user --user 0 com.google.android.apps.accessibility.voiceaccess
 pm disable-user --user 0 com.google.android.apps.docs.editors.sheets
 pm disable-user --user 0 com.google.android.apps.messaging
 pm disable-user --user 0 com.google.android.apps.restore
+pm disable-user --user 0 com.google.android.apps.setupwizard.searchselector
 pm disable-user --user 0 com.google.android.as
 pm disable-user --user 0 com.google.android.googlequicksearchbox
 pm disable-user --user 0 com.google.android.gms.location.history
