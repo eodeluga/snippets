@@ -5,7 +5,6 @@ pm disable-user --user 0 com.android.egg
 pm disable-user --user 0 com.android.hotwordenrollment.okgoogle
 pm disable-user --user 0 com.android.hotwordenrollment.xgoogle
 pm disable-user --user 0 com.android.internal.systemui.onehanded.gestural
-pm disable-user --user 0 com.android.settings.intelligence
 pm disable-user --user 0 com.android.wallpaper.livepicker
 pm disable-user --user 0 com.facebook.appmanager
 pm disable-user --user 0 com.facebook.services
