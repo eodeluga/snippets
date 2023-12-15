@@ -91,7 +91,6 @@ pm disable-user --user 0 com.samsung.android.sharelive
 pm disable-user --user 0 com.samsung.android.singletake.service
 pm disable-user --user 0 com.samsung.android.sm.devicesecurity
 pm disable-user --user 0 com.samsung.android.smartface
-pm disable-user --user 0 com.samsung.android.smartsuggestions
 pm disable-user --user 0 com.samsung.android.spayfw
 pm disable-user --user 0 com.samsung.android.stickercenter
 pm disable-user --user 0 com.samsung.android.storyservice
