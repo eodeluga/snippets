@@ -122,3 +122,9 @@ pm disable-user --user 0 io.nebulas.wallet.android
 pm disable-user --user 0 org.torproject.torbrowser
 pm disable-user --user 0 org.toshi
 pm disable-user --user 0 redpi.apps.accelerometercalibrationfree
+# New
+pm disable-user --user 0 com.samsung.android.app.watchmanagerstub
+pm disable-user --user 0 com.android.managedprovisioning
+pm disable-user --user 0 com.sec.android.app.quicktool
+pm disable-user --user 0 com.samsung.android.app.taskedge
+pm disable-user --user 0 com.samsung.android.svcagent
