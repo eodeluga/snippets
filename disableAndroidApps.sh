@@ -32,7 +32,6 @@ pm disable-user --user 0 com.samsung.accessibility
 pm disable-user --user 0 com.samsung.aimodelprovider.reflectionremovalmodels
 pm disable-user --user 0 com.samsung.aimodelprovider.shadowremovalmodels
 pm disable-user --user 0 com.samsung.aimodelprovider.smartaiengine
-pm disable-user --user 0 com.samsung.android.allshare.service.mediashare
 pm disable-user --user 0 com.samsung.android.app.camera.sticker.facearavatar.preload
 pm disable-user --user 0 com.samsung.android.app.cocktailbarservice
 pm disable-user --user 0 com.samsung.android.app.omcagent
