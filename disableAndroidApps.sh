@@ -64,7 +64,6 @@ pm disable-user --user 0 com.samsung.android.inputmethod.pinyin
 pm disable-user --user 0 com.samsung.android.kgclient
 pm disable-user --user 0 com.samsung.android.kidsinstaller
 pm disable-user --user 0 com.samsung.android.knox.zt.framework
-pm disable-user --user 0 com.samsung.android.lool
 pm disable-user --user 0 com.samsung.android.mdx
 pm disable-user --user 0 com.samsung.android.mdx.kit
 pm disable-user --user 0 com.samsung.android.mapsagent
