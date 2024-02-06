@@ -114,10 +114,7 @@ pm disable-user --user 0 com.sec.android.easyMover.Agent
 pm disable-user --user 0 com.sec.android.easyonehand
 pm disable-user --user 0 com.sec.android.hearingadjust
 pm disable-user --user 0 com.touchtype.swiftkey
-pm disable-user --user 0 com.udemy.android
 pm disable-user --user 0 de.axelspringer.yana.zeropage
-pm disable-user --user 0 io.nebulas.wallet.android
-pm disable-user --user 0 org.torproject.torbrowser
 pm disable-user --user 0 org.toshi
 pm disable-user --user 0 redpi.apps.accelerometercalibrationfree
 # New
@@ -136,7 +133,6 @@ pm disable-user --user 0 com.google.android.partnersetup
 pm disable-user --user 0 com.google.android.printservice.recommendation
 pm disable-user --user 0 com.samsung.android.aircommandmanager
 pm disable-user --user 0 com.samsung.android.app.clipboardedge
-pm disable-user --user 0 com.samsung.android.app.reminder
 pm disable-user --user 0 com.samsung.android.dqagent
 pm disable-user --user 0 com.samsung.android.dynamiclock
 pm disable-user --user 0 com.samsung.android.knox.analytics.uploader
