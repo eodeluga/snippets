@@ -70,8 +70,6 @@ pm disable-user --user 0 com.samsung.android.smartface
 pm disable-user --user 0 com.samsung.android.spayfw
 pm disable-user --user 0 com.samsung.android.stickercenter
 pm disable-user --user 0 com.samsung.android.svoiceime
-pm disable-user --user 0 com.samsung.android.themecenter
-pm disable-user --user 0 com.samsung.android.themestore
 pm disable-user --user 0 com.samsung.android.visionintelligence
 pm disable-user --user 0 com.samsung.android.vtcamerasettings
 pm disable-user --user 0 com.samsung.safetyinformation
