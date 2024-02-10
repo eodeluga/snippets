@@ -26,7 +26,6 @@ pm disable-user --user 0 com.klim.dbdesigner
 pm disable-user --user 0 com.microsoft.appmanager
 pm disable-user --user 0 com.microsoft.office.word
 pm disable-user --user 0 com.microsoft.skydrive
-pm disable-user --user 0 com.org.torproject.torbrowser
 pm disable-user --user 0 com.redpi.apps.accelerometercalibrationfree
 pm disable-user --user 0 com.samsung.accessibility
 pm disable-user --user 0 com.samsung.aimodelprovider.reflectionremovalmodels
