@@ -46,7 +46,7 @@ echo 'export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}' | tee -a ~/.bashrc
 echo 'export PATH="$DOCKER_CONFIG/cli-plugins:$PATH"' | tee -a ~/.bashrc
 
 # Install Docker Compose
-bash -c "source ~/.bashrc && source ~/.profile && mkdir -p $DOCKER_CONFIG/cli-plugins && curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o $DOCKER_CONFIG/cli-plugins/docker-compose && chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose"
+# bash -c "source ~/.bashrc && source ~/.profile && mkdir -p $DOCKER_CONFIG/cli-plugins && curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o $DOCKER_CONFIG/cli-plugins/docker-compose && chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose"
 # mkdir -p $DOCKER_CONFIG/cli-plugins
 # curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o $DOCKER_CONFIG/cli-plugins/docker-compose
 # chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
