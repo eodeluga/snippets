@@ -42,6 +42,7 @@ echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm' | tee 
 echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion' | tee -a ~/.bashrc
 echo '' | tee -a ~/.bashrc
 echo '# Add docker-compose to path' | tee -a ~/.bashrc
+echo 'export DOCKER_HOST=unix:///run/user/$UID/docker.sock' | tee -a ~/.bashrc
 echo 'export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}' | tee -a ~/.bashrc
 echo 'export PATH="$DOCKER_CONFIG/cli-plugins:$PATH"' | tee -a ~/.bashrc
 
