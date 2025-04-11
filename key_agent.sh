@@ -1,3 +1,4 @@
+#!/bin/bash
 SSH_HOME="$HOME/.ssh"
 
 function find_agent {
