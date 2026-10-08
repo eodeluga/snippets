@@ -170,4 +170,4 @@ fi
 
 source ~/.bashrc
 
-echo "✅ Rootless Docker with Compose is installed. Run 'docker info' and 'docker compose version' to verify."
+echo -e "✅ Rootless Docker with Compose is installed.\nRun '. ~/.bashrc'\nThen run 'docker info' and 'docker compose version' to verify."
